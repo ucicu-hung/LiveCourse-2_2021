@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset */
+
+
+/*  共通 START */
+*, *::after, *::before{
+	box-sizing: border-box;
+}
+html, 
+body{
+	font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+	vertical-align: middle;
+    max-width: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+/* wrapper */
+header,
+main,
+footer{
+    max-width:100%;
+    margin: 0 auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* color  */
+.color-write { color: #ffffff; }
+.color-block { color: #000000; }
+.color-red { color: red; }
+
+
+
+/* Font */
+h1 {
+    font-size: 80px;
+    line-height: 94px;
+    font-style: italic;
+    font-weight: bold;
+}
+/* h2 */
+.title {
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 56px;
+    margin-bottom: 40px;
+}
+.brand .title{
+    margin-bottom: 12px;
+}
+.works .title{
+    margin-bottom: 16px;
+}
+
+/* p段落 */
+p{
+    font-size: 24px;
+    line-height: 36px;
+    font-style: italic;
+}
+.text-small{
+    font-size: 20px;
+    line-height: 30px;
+}
+.line-height-4{
+    line-height: 42px;
+}
+
+/* 對齊 */
+.align-center {
+    text-align: center;
+}
+.font-normal {
+    font-style: normal;
+}
+
+/* 間距 8倍數*/
+.mb-0{
+    margin-bottom: 4px;
+}
+.mb-1 {
+    margin-bottom: 8px;
+}
+.mb-2 {
+    margin-bottom: 16px;
+}
+.mb-3 {
+    margin-bottom: 24px;
+}
+.mb-4 {
+    margin-bottom: 32px;
+}
+.mb-5 {
+    margin-bottom: 40px;
+}
+.mb-6 {
+    margin-bottom: 48px;
+}
+.mb-7 {
+    margin-bottom: 56px;
+}
+.mb-8 {
+    margin-bottom: 64px;
+}
+.mb-9 {
+    margin-bottom: 72px;
+}
+.ml-3 {
+    margin-bottom: 24px;
+}
+
+/* 特殊間距 */
+.mb-40{
+    margin-bottom: 40px;
+}
+
+
+/* flex */
+.flexbox{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-justify-content-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* section */
+.header-bg {
+    max-width: 100%; 
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 308px;
+}
+.brand{
+    background-color: #000;
+    padding-bottom: 160px;
+}
+
+
+
+/* header */
+.headerInner-box {
+    width: 304px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+}
+.headerInner-box p{
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+}
+.headerInner-box .txt{
+    padding-left: 13px;
+    line-height: 36px;
+}
+.h-media {
+    display: flex;
+    flex-direction: row;
+    width: 288px;
+    margin-bottom: 256px;
+}
+
+.h-media li {
+    margin: 0px 8px;
+}
+
+.h-media li a img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    color: #ffffff;
+    opacity: 1;
+    transition: all 0.3;
+}
+
+.h-media li a:hover img {
+    opacity: 0.8;
+}
+
+.h-media li:first-of-type {
+    margin-left: 0;
+}
+.h-media li:last-of-type{
+    margin-right: 0;
+}
+
+/* about */
+.about {
+    width: 410px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.about img {
+    padding: 0 13px;
+}
+
+.about img {
+    padding: 0 13px 24px;
+}
+
+.about ul {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.about li {
+    font-size: 24px;
+    line-height: 42px;
+    padding-bottom: 28px;
+    position: relative;
+    font-style: italic;
+}
+
+.about li::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    margin-left: -37px;
+    color: #891818;
+    background-color: #891818;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.about li:last-of-type{
+    padding-bottom: 0;
+}
+
+.about .txt-mb20 {
+    margin-bottom: 20px;
+}
+
+.about .p-txt{
+    font-size: 24px;
+    line-height: 36px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+}
+
+/* my brand */
+.brand li{
+    margin-right: 24px;
+}
+
+.brand .brand-txt{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 68px;
+    text-align: center;
+}
+
+/* works */
+.works .preface {
+    margin-bottom: 56px;
+}
+.works .works-list{
+    margin-bottom: 96px;
+}
+.works .works-list-item li{
+    padding: 0px 12px 48px;
+}
+.works .works-list-item p{
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    font-style: normal;
+    padding-top: 16px;
+}
+
+footer{
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 64px;
+}
